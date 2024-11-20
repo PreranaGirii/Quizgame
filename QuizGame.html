@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="difficulty-selection">
+            <h2>Select Difficulty Level</h2>
+            <button data-difficulty="easy">Easy</button>
+            <button data-difficulty="medium">Medium</button>
+            <button data-difficulty="hard">Hard</button>
+        </div>
+        <div id="quiz-interface" style="display: none;">
+            <h2 id="question-number"></h2>
+            <p id="question-text"></p>
+            <div id="options-container"></div>
+
+            <button id="next-question" disabled>Next</button>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <script src="Game.js"></script>
+</body>
+</html>
